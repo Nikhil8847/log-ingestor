@@ -12,6 +12,7 @@ function App() {
         <Route path="/" element={<AddLogFormComponent />} />
         <Route path="/add-log" element={<AddLogFormComponent />} />
         <Route path="/logs" element={<LogsViewComponent />} />
+        <Route path="*" element={<LogsViewComponent />} />
       </Routes>
     </>
   );
