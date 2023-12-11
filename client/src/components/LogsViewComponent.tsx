@@ -55,7 +55,7 @@ function LogsViewComponent() {
         }, {});
       console.log(nonEmptyQueryparams);
       const response = await axios.get(
-        "https://log-ingestor-backend-d6w7.onrender.com",
+        "https://log-ingestor-backend-d6w7.onrender.com/api",
         {
           params: nonEmptyQueryparams,
         }
