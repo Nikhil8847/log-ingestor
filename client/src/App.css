@@ -1,0 +1,16 @@
+.animated-line {
+  height: 2px; /* Adjust the height of your line */
+  background-color: #000; /* Adjust the color of your line */
+  animation: moveLine 5s linear infinite; /* Adjust the animation duration */
+
+  @keyframes moveLine {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(
+        100vw
+      ); /* Adjust the distance the line should travel */
+    }
+  }
+}
