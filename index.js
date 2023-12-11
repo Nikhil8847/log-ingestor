@@ -10,7 +10,11 @@ const logRouter = require("./routes/logRouter");
 
 // Middlewares
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://log-ingestor-frontend.onrender.com",
+  })
+);
 app.use(morgan("dev"));
 app.use("/api", logRouter);
 const port = process.env.PORT || 3000;
