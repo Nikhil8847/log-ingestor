@@ -45,10 +45,13 @@ const AddLogFormComponent = () => {
     try {
       console.log(formData);
       // Send the form data to the Node.js backend using Axios
-      const response = await axios.post("http://localhost:3000/api", {
-        ...formData,
-        timestamp: new Date(),
-      });
+      const response = await axios.post(
+        "https://log-ingestor-backend-d6w7.onrender.com",
+        {
+          ...formData,
+          timestamp: new Date(),
+        }
+      );
 
       console.log("Form submitted successfully:", response.data);
       alert("Log successfully sent for ingestion...");
