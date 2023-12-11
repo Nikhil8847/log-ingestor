@@ -54,9 +54,12 @@ function LogsViewComponent() {
           return acc;
         }, {});
       console.log(nonEmptyQueryparams);
-      const response = await axios.get("http://localhost:3000/api", {
-        params: nonEmptyQueryparams,
-      });
+      const response = await axios.get(
+        "https://log-ingestor-backend-d6w7.onrender.com/",
+        {
+          params: nonEmptyQueryparams,
+        }
+      );
       console.log(response);
       setLogs(response.data);
       setLoading(false);
