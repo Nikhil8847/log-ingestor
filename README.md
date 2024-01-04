@@ -1,4 +1,4 @@
-`# Log Ingestor and Query Interface
+# Log Ingestor and Query Interface
 
 This project is a log ingestor system that efficiently handles vast volumes of log data and provides a simple interface for querying this data using full-text search or specific field filters. The system includes both a log ingestor and a query interface.
 
