@@ -30,6 +30,7 @@ function LogsViewComponent() {
   };
   useEffect(() => {
     // Load initial logs on component mount
+    alert("The Backend is deployed on render too, so backend responses might take a while");
     fetchLogs();
   }, []);
 
